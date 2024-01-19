@@ -1,0 +1,70 @@
+.glow-green:focus {
+  border-color: #6a994e; /* Border color when focused */
+  box-shadow: 0 0 0 0.25rem #a7c957; /* Green glow color */
+}
+
+body{
+  user-select: none;
+}
+textarea{
+  user-select: text;
+}
+
+::selection {
+  background-color: #a7c957;
+  color: white; /* Optional: Change the text color when selected */
+}
+
+textarea {
+  outline: 1px solid #6a994e;
+}
+
+/* .profile{
+  border-radius: 10%;
+  transition: all 0.25s ease-in-out;
+}
+
+.profile:hover{
+  transform: scale(1.06);
+  box-shadow: 0px 0px 5px 5px #386641;
+} */
+
+.customBox{
+  position: fixed;
+  top: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.customAlert{
+  position: absolute;
+  top: 20px;
+  /* width: 250px; */
+  width: auto;
+  border-radius: 6px;
+  padding: 8px;
+  font-weight: lighter;
+  background-color: #6A994E;
+  color: white;
+  text-align: center;
+}
+
+
+@media (max-width: 600px) {
+  /* smaller screens */
+  .customAlert{
+    width: auto;
+    font-size: small;
+    
+  }
+
+  .h2inAbout {
+    font-size: 1.3rem;
+  }
+  .h4inAbout{
+    font-size: 0.8rem;
+  }
+
+}
